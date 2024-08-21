@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flappy Bird Game</title>
+    <link rel="icon" href="img/bird.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+        color: #236abb;
+        font-family: "Bungee Tint", sans-serif;
+        } 
+        #canvas {
+        border: 5px solid rgb(0, 0, 0);
+        box-shadow: 0 0 20px 5px red;
+        animation: glow 2.5s infinite;
+    }
+
+    @keyframes glow {
+        0% {
+            box-shadow: 0 0 20px 5px red;
+        }
+        25% {
+            box-shadow: 0 0 20px 5px orange;
+        }
+        50% {
+            box-shadow: 0 0 20px 5px yellow;
+        }
+        75% {
+            box-shadow: 0 0 20px 5px green;
+        }
+        100% {
+            box-shadow: 0 0 20px 5px blue;
+        }
+    }
+    body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    </style>
+  </head>
+  <body style="text-align:center;background: #272b30;margin-top:5%">
+  <h1>8 Bit Underwater Game</h1>
+   <canvas id="canvas" width="500" height="512"></canvas>
+   <script src="index.js"></script>
+  </body>
+</html>
